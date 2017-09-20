@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "fit-cli": "^0.0.6",
-		"uglify-js": "^3.1.0"
+    "uglify-js": "^3.1.0"
   },
   "devDependencies": {
     "templatecache": "^1.0.7",
@@ -13,21 +13,21 @@
   },
   "main": "./bundle.js",
   "module": "./module.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/fit-js/ng-tpl-bundle.git"
-	},
-	"bundle": {
-		"group": [
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fit-js/ng-tpl-bundle.git"
+  },
+  "bundle": {
+    "group": [
       "templates",
       "html",
-			"js",
-			"es6"
-		]
-	},
-	"author": {
-		"name": "thfrlw",
-		"email": "fitjs@icloud.com"
-	},
-	"license": "Apache-2.0"
+      "js",
+      "es6"
+    ]
+  },
+  "author": {
+    "name": "thfrlw",
+    "email": "fitjs@icloud.com"
+  },
+  "license": "Apache-2.0"
 }
