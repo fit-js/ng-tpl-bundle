@@ -1,8 +1,7 @@
 {
   "name": "ng-tpl-bundle",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dependencies": {
-    "bs-bundle": "0.0.2",
     "fit-cli": "^0.0.7",
     "uglify-js": "^3.1.0"
   },
