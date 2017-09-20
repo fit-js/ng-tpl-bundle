@@ -1,8 +1,9 @@
 {
   "name": "ng-tpl-bundle",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "dependencies": {
-    "fit-cli": "^0.0.6",
+    "bs-bundle": "0.0.2",
+    "fit-cli": "^0.0.7",
     "uglify-js": "^3.1.0"
   },
   "devDependencies": {
@@ -11,8 +12,8 @@
     "rollup-plugin-local-resolve": "^1.0.7",
     "rollup-plugin-node-resolve": "^3.0.0"
   },
-  "main": "./bundle.js",
-  "module": "./module.js",
+  "main": "bundle.js",
+  "module": "module.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fit-js/ng-tpl-bundle.git"
