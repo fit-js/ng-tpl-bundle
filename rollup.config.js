@@ -1,6 +1,5 @@
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
-import localResolve from 'rollup-plugin-local-resolve';
 
 export default {
 	input: './module',
@@ -28,14 +27,13 @@ export default {
 		nodeResolve ({
 			jsnext: true,
 			main: true,
+			module: true,
 			preferBuiltins: true
 		}),
-		localResolve(),
 		commonjs ({
 			include: 'node_modules/**',
 			ignoreGlobal: false,
-			sourceMap: false,
-			ignore: [ 'fs', 'path', 'process' ]
+			sourceMap: false
 		})
 	]
 };
