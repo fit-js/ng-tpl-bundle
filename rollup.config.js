@@ -9,7 +9,7 @@ export default {
 		format: 'cjs'
 	},
 	external: ['fit-core', 'uglify-js'],
-	name: 'ng-tpl-bundle',
+	name: pkg.name,
 	plugins: [
 		nodeResolve ({
 			jsnext: true,
