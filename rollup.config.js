@@ -20,7 +20,8 @@ export default {
 		commonjs ({
 			include: 'node_modules/**',
 			ignoreGlobal: false,
-			sourceMap: false
+			sourceMap: false,
+			ignore: ['fs', 'path']
 		})
 	]
 };
