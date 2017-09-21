@@ -8,21 +8,7 @@ export default {
 		file: pkg.main,
 		format: 'cjs'
 	},
-	external: [
-		'uglify-js',
-
-		'assert',
-		'fs',
-		'path',
-		'process',
-		'events',
-		'module',
-		'http',
-		'https',
-		'os',
-		'url',
-		'util'
-	],
+	external: ['fit-core', 'uglify-js'],
 	name: 'ng-tpl-bundle',
 	plugins: [
 		nodeResolve ({

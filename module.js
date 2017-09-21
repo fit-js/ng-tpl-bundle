@@ -1,8 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import templatecache from 'templatecache';
-
-const core = require ('fit-cli');
+import { args, globals } from 'fit-core';
 
 let develop, source, output, cwd;
 
@@ -18,7 +17,7 @@ function build () {
 }
 
 export function init (config) {
-	develop = core.args.env() === 'develop';
+	develop = args.env() === 'develop';
 
 	source = ['*.html', '**/*.html'];
 	output = config.output;
@@ -26,7 +25,7 @@ export function init (config) {
 
 	build();
 
-	let bs = core.globals.get ('bs');
+	let bs = globals.get ('bs');
 
 	if (develop && bs) {
 		bs
